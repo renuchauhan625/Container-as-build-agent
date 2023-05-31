@@ -1,0 +1,10 @@
+pipeline{
+    agent{
+        docker { image 'node:16-alpine'}
+    }
+    stages{
+        stage('Test'){
+            bat 'node --version'
+        }
+    }
+}
