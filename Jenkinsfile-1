@@ -5,6 +5,7 @@ pipeline{
     stages{
         stage('Test'){
             bat 'node --version'
+            
         }
     }
 }
